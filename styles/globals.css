@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "fonts.css";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter var", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* .highlight-title {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #f5be0bee 0%);
+} */
+
+.highlight-about {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 50%,
+    rgb(248 113 113) 50%
+  );
+}
+
+.highlight-projects {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #e6a919 50%);
+}
+
+.highlight-experience {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #60a5fa 50%);
+}
+
+.highlight-blog {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #818cf8 50%);
+}
+
+.highlight-contact {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #8b5cf6 50%);
+}
