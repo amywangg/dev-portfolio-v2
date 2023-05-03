@@ -80,13 +80,13 @@ const SkillsCard = ({ skill }) => {
     <div className="github-repo">
       <div className="inline-flex gap-2">
         {skill.images.map((image) => (
-          <img className="h-5 pr-2" src={`/skills-images/${image}.png`} />
+          <img className="h-6 pr-2" src={`/skills-images/${image}.png`} />
         ))}
       </div>
-      <h1 className="font-semibold text-normal dark:text-gray-200 text-slate-900">
+      <h1 className="font-semibold text-lg dark:text-gray-200 text-slate-900">
         {skill.name}
       </h1>
-      <p className="text-sm font-normal mt-2 mb-4 text-gray-500 dark:text-slate-300">
+      <p className="text-base font-normal mt-2 mb-4 text-gray-500 dark:text-slate-300">
         {skill.description}
       </p>
     </div>
@@ -95,12 +95,12 @@ const SkillsCard = ({ skill }) => {
 
 export default function Skills() {
   return (
-    <div className="flex flex-col justify-start items-start bg-white dark:bg-slate-700 px-[8vw] pb-8">
-      <div className="text-black dark:text-white my-10">
-        <p className="border-l-4 border-blue-400 pl-2  text-2xl font-bold my-2">
+    <div className="flex flex-col justify-start items-start bg-white dark:bg-slate-700 px-[8vw] pb-20">
+      <div className="text-black dark:text-white my-12">
+        <p className="border-l-8 border-blue-400 pl-2  text-4xl font-bold my-4">
           What I do
         </p>
-        <p className="text-sm">
+        <p className="text-lg">
           I have over 3 years of experience building software on agile teams for
           early startups, large companies, financial companies, etc.
           Additionally, I have engineered several full stack applications during
@@ -110,7 +110,7 @@ export default function Skills() {
           knowledge I have already accumulated!
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full gap-8 gap-y-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full gap-8 gap-y-5 mt-4">
         {skills.map((skill, idx) => (
           <SkillsCard skill={skill} key={idx} />
         ))}

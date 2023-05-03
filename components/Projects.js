@@ -4,11 +4,11 @@ import userData from "@constants/data";
 export default function Projects() {
   return (
     <section className="bg-white dark:bg-gray-800">
-      <div className="bg-slate-100 dark:bg-gray-800 px-[8vw] py-12">
-        <p className=" border-l-8 border-yellow-400 pl-2 text-5xl font-bold my-2">
+      <div className="bg-slate-100 dark:bg-gray-800 px-[8vw] py-12 ">
+        <p className=" border-l-8 border-yellow-400 pl-2 text-6xl font-bold my-8">
           Projects
         </p>
-        <p className="text-base my-6">
+        <p className="text-lg my-6">
           Below showcases projects I've worked on from school, on my own time,
           and from work. Throughout my time at Waterloo, I had the opportunity
           to work with a group of amazing individuals all with varying skillsets
@@ -41,7 +41,7 @@ const ProjectCard = ({ title, link, imgUrl, number }) => {
   return (
     <a href={link} className="w-full block shadow-2xl">
       <div className="relative overflow-hidden">
-        <div className="h-72 object-cover">
+        <div className="h-[45vh] min-h-[300px] object-cover">
           <img
             src={imgUrl}
             alt="portfolio"

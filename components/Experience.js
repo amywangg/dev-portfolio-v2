@@ -4,12 +4,12 @@ import React from "react";
 export default function Experience() {
   return (
     <div>
-      <div className="flex flex-col justify-start items-start bg-white dark:bg-slate-800 px-[8vw] pb-6">
-        <div className="text-black dark:text-white mt-10">
-          <p className=" border-l-8 border-indigo-400 pl-2 text-5xl font-bold my-2">
+      <div className="flex flex-col justify-start items-start bg-white dark:bg-slate-800 px-[8vw] pb-12">
+        <div className="text-black dark:text-white pt-12">
+          <p className=" border-l-8 border-indigo-400 pl-2 text-6xl font-bold my-8">
             Experience
           </p>
-          <p className="text-base my-6">
+          <p className="text-lg my-6">
             I have been so fortunate to be able to gather work experience while
             attending Waterloo in their Management Engineering Co-op program.
             University taught me so much and helped build my discipline and

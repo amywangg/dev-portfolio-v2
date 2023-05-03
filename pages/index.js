@@ -22,8 +22,8 @@ export default function Home({ repositories }) {
   );
 }
 
-const getServerSideProps = async () => {
-  let token = "";
+export const getServerSideProps = async () => {
+  let token = process.env.GITHUB_AUTH_TOKEN;
 
   const repositories = await getStarredRepos(userData, token);
 

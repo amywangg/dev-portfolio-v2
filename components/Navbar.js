@@ -22,16 +22,16 @@ export default function Navbar() {
         <div className="inline-flex">
           <Link href="/">
             <img
-              className="rounded-sm w-8 h-8 mx-3 mt-[2px]"
+              className="rounded-sm w-12 h-12 mx-3 mt-[2px]"
               src="/logo.png"
               alt="avatar"
             />
           </Link>
           <Link href="/">
-            <h1 className="font-semibold text-sm text-gray-100">
+            <h1 className="font-semibold text-lg text-gray-100">
               {userData.name}
             </h1>
-            <p className="text-xs font-light text-gray-300">
+            <p className="text-base font-light text-gray-300">
               {userData.designation}
             </p>
           </Link>
@@ -41,7 +41,7 @@ export default function Navbar() {
           {routes.map((route) => (
             <Link
               href={`/${route === "About" ? "" : route.toLowerCase()}`}
-              className={`text-sm px-1 ${
+              className={`text-lg px-1 ${
                 router.asPath ===
                 `/${route === "About" ? "" : route.toLowerCase()}`
                   ? `highlight-${route.toLowerCase()} font-semibold text-white`
