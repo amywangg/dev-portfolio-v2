@@ -23,7 +23,7 @@ export default function LatestCode({ repositories }) {
             </a>
           </div>
 
-          <p className="text-md my-6 dark:text-slate-300">
+          <p className="text-lg my-6 dark:text-slate-300">
             Throughout my time at Waterloo, I had the opportunity to work with a
             group of amazing individuals all with varying skillsets to create
             various projects showcased here. I couldn't have completed these
@@ -36,7 +36,7 @@ export default function LatestCode({ repositories }) {
         </header>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10 px-[8vw]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10 px-[8vw] mt-10">
         {repos &&
           repos.map((latestRepo, idx) => (
             <GithubRepoCard latestRepo={latestRepo} key="idx" />
@@ -49,16 +49,16 @@ export default function LatestCode({ repositories }) {
 const GithubRepoCard = ({ latestRepo }) => {
   return (
     <div className="github-repo">
-      <h1 className="font-semibold text-normal dark:text-slate-300 text-slate-900">
+      <h1 className="font-semibold text-xl dark:text-slate-300 text-slate-900">
         {latestRepo.name}
       </h1>
-      <p className="text-sm font-normal mt-2 mb-4 text-gray-500 dark:text-slate-500">
+      <p className="text-lg font-normal mt-2 mb-4 text-gray-500 dark:text-slate-500">
         {latestRepo.description}
       </p>
       <a
         href={latestRepo.clone_url}
         target="_blank"
-        className="dark:text-slate-400 text-sm font-medium group flex flex-row space-x-2 w-full items-cente hover:text-blue-400"
+        className="dark:text-slate-400 text-medium font-medium group flex flex-row space-x-2 w-full items-center hover:text-blue-400 hover:dark:text-blue-400"
       >
         <p>View Repository </p>
         <div className="transform  group-hover:translate-x-2 transition duration-300">
