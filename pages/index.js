@@ -4,7 +4,7 @@ import ContainerBlock from "../components/ContainerBlock";
 import FavouriteProjects from "../components/FavouriteProjects";
 import LatestCode from "../components/LatestCode";
 import Intro from "../components/Intro";
-import getLatestRepos from "@lib/getStarredRepos";
+import getStarredRepos from "@lib/getStarredRepos";
 import userData from "@constants/data";
 import Skills from "@components/Skills";
 
@@ -22,11 +22,10 @@ export default function Home({ repositories }) {
   );
 }
 
-export const getServerSideProps = async () => {
-  console.log(process.env.GITHUB_AUTH_TOKEN);
-  let token = process.env.GITHUB_AUTH_TOKEN;
+const getServerSideProps = async () => {
+  let token = "";
 
-  const repositories = await getLatestRepos(userData, token);
+  const repositories = await getStarredRepos(userData, token);
 
   return {
     props: {

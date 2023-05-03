@@ -22,7 +22,7 @@ export default function Socials({ tooltipTop = false }) {
         <svg
           width="21"
           height="21"
-          preserveAspectRatio="x200Y200 meet"
+          preserveAspectRatio=""
           viewBox="0 0 98 98"
           xmlns="http://www.w3.org/2000/svg"
           fill="currentColor"
